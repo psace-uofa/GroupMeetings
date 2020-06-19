@@ -1,1 +1,1 @@
-https://github.com/psace-uofa/GroupMeetings/blob/master/Introduction%20to%20GPU%20computing.ipynb
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/psace-uofa/GroupMeetings/master)
