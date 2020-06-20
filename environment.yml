@@ -3,5 +3,4 @@ name: python-environment
 dependencies:
   - python=3.7
   - numpy
-  - timeit
   - numba
