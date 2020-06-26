@@ -13226,8 +13226,10 @@ a.anchor-link {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Installing-Jupyter-Notebook">Installing Jupyter Notebook<a class="anchor-link" href="#Installing-Jupyter-Notebook">&#182;</a></h1><hr>
 <ul>
-<li>Jupyter documentation on installation: <a href="https://jupyter.readthedocs.io/en/latest/install.html">https://jupyter.readthedocs.io/en/latest/install.html</a></li>
-<li>Using Anaconda and conda (Recommended): 
+<li><p>Jupyter documentation on installation: <a href="https://jupyter.readthedocs.io/en/latest/install.html">https://jupyter.readthedocs.io/en/latest/install.html</a></p>
+</li>
+<li><p>Using Anaconda and conda (Recommended):</p>
+
 <pre><code>conda install -c conda-forge notebook</code></pre>
 </li>
 <li><p>Installing with pip:</p>
@@ -13246,16 +13248,189 @@ a.anchor-link {
 
 </div>
 </div>
-</div></section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Run-the-Jupyter-Notebook">Run the Jupyter Notebook<a class="anchor-link" href="#Run-the-Jupyter-Notebook">&#182;</a></h1><hr>
 <ul>
-<li>After installation, run the following command at the Terminal (Mac/Linux) or Command Prompt (Windows):
+<li>After installation, run the following command at the <strong>Terminal (Mac/Linux)</strong> or <strong>Command/ Anaconda Prompt (Windows)</strong>:
 <pre><code>jupyter notebook</code></pre>
 </li>
+<li>We have to <strong>leave the server that we started up in our terminal running</strong>. If we close the window and shut down that server then we wouldn't be able to access our notebooks within our localhost.</li>
 </ul>
+<h1 id="Stop-the-Server">Stop the Server<a class="anchor-link" href="#Stop-the-Server">&#182;</a></h1><hr>
+<ul>
+<li>Use <code>Control</code>+<code>C</code> to stop this server and shut down all kernels (twice to skip confirmation).</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Jupyter-Notebook-Interface">Jupyter Notebook Interface<a class="anchor-link" href="#Jupyter-Notebook-Interface">&#182;</a></h1><hr>
+<h2 id="Command-Mode">Command Mode<a class="anchor-link" href="#Command-Mode">&#182;</a></h2><ul>
+<li>Command mode is designed for easily navigating and changing the framework of your notebook.</li>
+</ul>
+<blockquote><p>That framework is composed of cells, which keep your data, thoughts, and code in little containers.</p>
+</blockquote>
+<ul>
+<li>Command mode is highlihged in blue.</li>
+<li>No pencil icon on the upper-right corner for <strong>command mode</strong>.</li>
+</ul>
+<p><img src="command_interface.PNG" alt="command_interface.PNG"></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Keyboard-Shortcuts-under-Command-Mode:">Keyboard Shortcuts under Command Mode:<a class="anchor-link" href="#Keyboard-Shortcuts-under-Command-Mode:">&#182;</a></h3><table>
+<thead><tr>
+<th style="text-align:left">Command mode</th>
+<th style="text-align:left">Shortcuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">a</td>
+<td style="text-align:left">Add a cell above</td>
+</tr>
+<tr>
+<td style="text-align:left">b</td>
+<td style="text-align:left">Add a cell below</td>
+</tr>
+<tr>
+<td style="text-align:left">c</td>
+<td style="text-align:left">Copy cell</td>
+</tr>
+<tr>
+<td style="text-align:left">v</td>
+<td style="text-align:left">Paste cell</td>
+</tr>
+<tr>
+<td style="text-align:left">x</td>
+<td style="text-align:left">Cut cell</td>
+</tr>
+<tr>
+<td style="text-align:left">dd</td>
+<td style="text-align:left">Delete cell</td>
+</tr>
+<tr>
+<td style="text-align:left">z</td>
+<td style="text-align:left">Undo</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Shift</code>+z</td>
+<td style="text-align:left">Redo</td>
+</tr>
+<tr>
+<td style="text-align:left">y</td>
+<td style="text-align:left">Cell format: Code</td>
+</tr>
+<tr>
+<td style="text-align:left">m</td>
+<td style="text-align:left">Cell format: Markdown</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Enter</code></td>
+<td style="text-align:left">Enter <strong>edit mode</strong></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Edit-Mode">Edit Mode<a class="anchor-link" href="#Edit-Mode">&#182;</a></h2><ul>
+<li>Edit mode is highlighted in green.</li>
+<li>A pencil incon on the upper-right corner for <strong>edit mode</strong>.
+<img src="edit_interface.PNG" alt="edit_interface.PNG"></li>
+</ul>
+<h3 id="Keyboard-Shortcuts-under-Edit-Mode:">Keyboard Shortcuts under Edit Mode:<a class="anchor-link" href="#Keyboard-Shortcuts-under-Edit-Mode:">&#182;</a></h3><table>
+<thead><tr>
+<th style="text-align:left">Edit mode</th>
+<th style="text-align:left">Shortcuts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>Shift</code>+<code>Enter</code></td>
+<td style="text-align:left">Run cell, select below</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Ctrl</code>+<code>Enter</code></td>
+<td style="text-align:left">Run selected cells</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Alt</code> + <code>Enter</code></td>
+<td style="text-align:left">Run cell and  insert below</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Markdown(.md)-Cheatsheet">Markdown(.md) Cheatsheet<a class="anchor-link" href="#Markdown(.md)-Cheatsheet">&#182;</a></h1><hr>
+<h1 id="Heading">Heading<a class="anchor-link" href="#Heading">&#182;</a></h1><blockquote><p><code>#</code> + <code>text</code></p>
+</blockquote>
+<h2 id="Heading-2">Heading 2<a class="anchor-link" href="#Heading-2">&#182;</a></h2><blockquote><p><code>##</code> + <code>text</code></p>
+</blockquote>
+<p><em>italics</em></p>
+<blockquote><p><code>*</code>+<code>text</code>+<code>*</code></p>
+</blockquote>
+<p><strong>bold</strong></p>
+<blockquote><p><code>**</code>+<code>text</code>+<code>**</code></p>
+</blockquote>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Unordered list<blockquote><p><code>-</code>+<code>text</code></p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li>ordered list<blockquote><p><code>Number</code> + <code>.</code>+ <code>text</code></p>
+</blockquote>
+</li>
+</ol>
+<blockquote><p>Blockquote using <code>&gt;</code> + <code>text</code></p>
+</blockquote>
+<hr>
+<blockquote><p>Horizontal line using <code>---</code></p>
+</blockquote>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Type some <code>incline code</code> and the rest of your text.</p>
+<blockquote><p>Using <code>backtick</code> + <code>text</code> + <code>backtick</code></p>
+</blockquote>
+
+<pre><code>Typy in a block of code</code></pre>
+<blockquote><p>Using three backticks (<code>``) +</code>text` + three backticks</p>
+</blockquote>
+<p>Creat equations $a+b=c$</p>
+<blockquote><p>Using <code>$</code>+<code>euqation</code>+<code>$</code> (Same as Latex)</p>
+</blockquote>
 
 </div>
 </div>
